@@ -681,7 +681,7 @@ footer {
 
 .subpage-content {
     padding: 60px 8%;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -705,6 +705,56 @@ footer {
     color: #333;
 }
 
+.video-info-box {
+    display:flex;
+    gap:30px;
+    align-items:center;
+    width:100%;
+    padding:30px;
+    background:#007A87; /* change this colour */
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    margin: auto;
+}
+
+
+.video-container {
+     flex: 0 0 75%;
+}
+
+.video-container iframe {
+    width:100%;
+    aspect-ratio:16 / 9;
+    display:block;
+    border:0;
+    border-radius:8px;
+}
+
+.info-content {
+     flex: 0 0 25%;
+}
+
+
+.info-content h2 {
+    margin-top:0;
+    color:white !important;
+}
+
+
+.info-content p {
+    line-height:1.5;
+    color: white !important;
+}
+
+
+/* Mobile layout */
+@media (max-width:700px) {
+
+    .video-info-box {
+        flex-direction:column;
+    }
+
+}
 
 
 /* =================================
@@ -754,21 +804,35 @@ footer {
 }
 
 
-.hotspot-planning {
-    left: 46%;
-    top: 50%;
+.hotspot-video-one {
+    left: 65%;
+    top: 33%;
 }
 
-.hotspot-perspectives {
-    left: 59%;
+.hotspot-video-two {
+    left: 67%;
+    top: 58%;
+}
+
+.hotspot-video-three {
+    left: 50%;
+    top: 71%;
+}
+
+.hotspot-video-four {
+    left: 35%;
+    top: 65%;
+}
+
+.hotspot-video-five {
+    left: 25%;
+    top: 49%;
+}
+
+.hotspot-video-six {
+    left: 39%;
     top: 32%;
 }
-
-.hotspot-impact {
-    left: 74%;
-    top: 35%;
-}
-
 
 .hotspot-marker {
     position: relative;
