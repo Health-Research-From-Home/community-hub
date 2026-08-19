@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const intro = document.querySelector(".blog-intro");
 
 			if (intro) {
-				excerpt.textContent = intro.textContent.trim();
+				excerpt.innerHTML = intro.innerHTML.trim();
 			}
 		} catch (error) {
 			console.error("Error loading blog intro:", error);

@@ -519,6 +519,7 @@ main {
 	position: relative;
 }
 
+/*
 .publications-box {
 	display: flex;
 	align-items: center;
@@ -562,6 +563,8 @@ main {
 .publications-box-buttons button:hover {
 	opacity: 0.8;
 }
+
+*/
 
 .site-container {
 	max-width: 1200px;
@@ -1455,59 +1458,116 @@ body {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .tir-leftcolumn {
-	float: left;
-	width: 75%;
+    float: left;
+    width: 75%;
 }
 
 .tir-rightcolumn {
-	float: left;
-	width: 25%;
-	padding-left: 20px;
-	box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .tir-card {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
-	box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
 }
 
+.tir-rightcolumn > .tir-card {
+	flex-direction: column;
+}
+
+/* Image section on the left */
+.tir-card-img {
+    flex: 0 0 30%;
+}
+
+.tir-card-image {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Text section on the right */
+.tir-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tir-card-content h2 {
+    margin-top: 0;
+}
+
+.tir-card-content h5 {
+    margin-bottom: 16px;
+}
+
+.tir-card-content p {
+    text-align: left;
+}
+
+.tir-card-content a {
+    color: white;
+    align-self: flex-start;
+}
+
+/* Right-hand column image */
 .tir-img {
-	text-align: center;
+    text-align: center;
 }
 
 .tir-img img {
-	width: 100%;
-	height: auto;
-}
-.tir-card p {
-	text-align: left;
-}
-.tir-card a {
-	color: #007a87;
+    width: 100%;
+    height: auto;
 }
 
 /* Clear floats after the columns */
 .tir-row:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* Mobile */
 @media screen and (max-width: 800px) {
-	.leftcolumn,
-	.rightcolumn {
-		width: 100%;
-		padding: 0;
-	}
+    .tir-leftcolumn,
+    .tir-rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .tir-card {
+        flex-direction: column;
+    }
+
+    .tir-card-img {
+        flex: none;
+        width: 100%;
+    }
+
+    .tir-card-image {
+        width: 100%;
+        height: 200px;
+        min-height: 0;
+    }
 }
 
 .blog-excerpt {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 9;
 	overflow: hidden;
 }
 
@@ -1613,4 +1673,14 @@ body {
 	.blog-rightcolumn {
 		width: 100%;
 	}
+}
+
+.tir-card-button {
+	margin-top: auto;
+	align-self: center;
+	padding: 10px 20px;
+	background-color: #0297a7;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: inherit;
 }

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Predicting multiple sclerosis symptoms using machine learning</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<script src="Templates/template-loader.js" defer></script>
+	</head>
+	<body>
+		<site-header
+			variant="subpage"
+			heading="Predicting multiple sclerosis symptoms using machine learning"
+		></site-header>
+		<noscript><p class="javascript-notice">Please enable JavaScript to display the site navigation.</p></noscript>
+
+		<!-- MAIN CONTENT -->
+
+		<main>
+			<div class="blog-post">
+				<div class="blog-leftcolumn">
+					<h3>June, 2026</h3>
+					<p class="blog-intro">
+						Multiple sclerosis (MS) affects around 2.8 million people worldwide. People living with MS can
+						experience many symptoms, including neurological symptoms affecting cognitive function and
+						movement, depression, fatigue and poor sleep. Some symptoms can be managed, but because clinic
+						visits are often infrequent, treatment can sometimes lag behind what people need. Smartphones
+						and wearables can track various aspects of health passively and continuously. This creates an
+						opportunity to use data from people’s devices to predict when symptoms might worsen.
+						<br /><br />
+						The month’s Tap into Research looks at a study testing whether machine learning models can
+						predict short-term changes in MS symptoms using data from smartphones, wearables, and
+						self-reported questionnaires.
+					</p>
+					<h3>How were smartphones and wearables used in the study?</h3>
+					<p>
+						Participants took part for 12-24 weeks and used their own smartphones. The research team
+						collected call activity, location, and screen use. Participants also wore Fitbits provided by
+						the study, which measured heart rate, step count, and sleep patterns.
+					</p>
+					<p>
+						Alongside this passive monitoring, participants completed a short symptom questionnaire on their
+						smartphone three times per day.
+					</p>
+					<p>
+						Every 2 weeks, participants completed a validated questionnaire on depressive symptoms. Every 4
+						weeks, they completed questionnaires on neurological symptoms, fatigue, and sleep quality. These
+						questionnaires were used as the “gold standard” to judge how well the models predicted symptoms.
+					</p>
+
+					<h3>What did the study find?</h3>
+					<p>
+						Models that included smartphone and wearable data were better at predicting short term worsening
+						in depression, neurological symptoms, fatigue, and sleep quality than models that did not use
+						this data.
+						<br /><br />
+						The study also found:
+					</p>
+					<ul>
+						<li>
+							Using smartphone and Fitbit measurements from the period just before symptom rating gave the
+							best predictions for depression, neurological symptoms, and sleep quality.
+						</li>
+						<li>For fatigue, also including data from further back in time improved predictions.</li>
+						<li>
+							For three of the four symptoms, adding the daily self-reported questionnaires did not
+							improve predictions. The exception was depression: the question “How depressed do you feel?”
+							helped predict future depressive symptoms.
+						</li>
+					</ul>
+					<h3>Why does this matter?</h3>
+					<p>
+						This study shows that data collected from smartphones and wearables during everyday life can
+						help predict when MS symptoms might worsen. This could allow people with MS to monitor their
+						symptoms more easily at home and help clinicians provide the right support at the right time.
+						<br /><br />
+						Future research could explore how well this approach works outside a study setting, where people
+						would need to keep using their devices, without the close monitoring that helped maintain
+						adherence during the study.
+					</p>
+					<p>
+						Read the paper:
+						<a href="https://www.jmir.org/2025/1/e70871/">
+							Longitudinal digital phenotyping of multiple sclerosis severity using passively sensed
+							behaviors and ecological momentary assessments: real-world evaluation
+						</a>
+					</p>
+				</div>
+
+				<div class="blog-rightcolumn">
+					<quick-nav></quick-nav>
+
+					<quick-blogs></quick-blogs>
+				</div>
+			</div>
+		</main>
+
+		<site-footer></site-footer>
+	</body>
+</html>
