@@ -858,10 +858,24 @@ footer {
 	text-decoration: none;
 }
 
-.image-hotspot:hover,
-.image-hotspot:focus,
-.image-hotspot:focus-visible {
+.image-hotspot:focus-within,
+.image-hotspot.is-open {
 	z-index: 10;
+}
+
+.image-hotspot:hover {
+	z-index: 20;
+}
+
+.hotspot-trigger {
+	display: block;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: transparent;
+	font: inherit;
+	line-height: 0;
+	cursor: pointer;
 }
 
 .hotspot-video-one {
@@ -978,21 +992,24 @@ footer {
 }
 
 .image-hotspot:hover .hotspot-card,
-.image-hotspot:focus .hotspot-card,
-.image-hotspot:focus-visible .hotspot-card {
+.image-hotspot.is-open .hotspot-card {
 	opacity: 1;
 	visibility: visible;
 
 	transform: translate(-50%, 0);
 }
 
+.image-hotspot.is-open .hotspot-card {
+	pointer-events: auto;
+}
+
 .image-hotspot:hover .hotspot-marker,
-.image-hotspot:focus .hotspot-marker {
+.image-hotspot.is-open .hotspot-marker {
 	background: rgba(107, 44, 145, 0.82);
 	transform: scale(1.14);
 }
 
-.image-hotspot:focus-visible {
+.hotspot-trigger:focus-visible {
 	outline: 3px solid #ffcc33;
 	outline-offset: 5px;
 }
