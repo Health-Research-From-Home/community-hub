@@ -1626,3 +1626,178 @@ color: #007A87;
     }
 
 }
+
+
+/* tap into research */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.tir-leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.tir-rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.tir-card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.tir-img {
+    text-align: center;
+}
+
+.tir-img img {
+    width: 100%;
+    height: auto;
+}
+.tir-card p{
+    text-align: left;
+}
+.tir-card a{
+    color: #007A87;
+}
+
+/* Clear floats after the columns */
+.tir-row:after {
+  content: "";
+display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+/* Blog post layout */
+
+.blog-post {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+    align-items: flex-start;
+}
+
+
+/* Left column */
+
+.blog-leftcolumn {
+    flex: 3;
+}
+
+
+/* Right column */
+
+.blog-rightcolumn {
+    flex: 1;
+}
+
+
+/* Main article */
+
+.blog-leftcolumn h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.blog-leftcolumn h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.blog-leftcolumn p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.blog-leftcolumn li {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.blog-leftcolumn a {
+    color: #007A87;
+}
+
+/* Right-hand card */
+
+.blog-right-card {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.blog-right-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Other blog posts */
+
+.other-posts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.other-posts li {
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.other-posts li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.other-posts a {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #007A87;
+}
+
+.other-posts a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-leftcolumn,
+    .blog-rightcolumn {
+        width: 100%;
+    }
+
+}
