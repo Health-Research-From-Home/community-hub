@@ -66,5 +66,29 @@ class SiteFooter extends HTMLElement {
 	}
 }
 
+// TODO: Can we make it so that this doesn't show the currently shown web page?
+class QuickNav extends HTMLElement {
+	async connectedCallback() {
+		try {
+			this.innerHTML = await loadTemplate("quick-nav.html");
+		} catch (error) {
+			showTemplateError(this, "quick-nav", error);
+		}
+	}
+}
+
+// TODO: Can we make it so that this doesn't show the currently shown blog post?
+class QuickBlogs extends HTMLElement {
+	async connectedCallback() {
+		try {
+			this.innerHTML = await loadTemplate("quick-blogs.html");
+		} catch (error) {
+			showTemplateError(this, "quick-blogs", error);
+		}
+	}
+}
+
 customElements.define("site-header", SiteHeader);
 customElements.define("site-footer", SiteFooter);
+customElements.define("quick-nav", QuickNav);
+customElements.define("quick-blogs", QuickBlogs);
