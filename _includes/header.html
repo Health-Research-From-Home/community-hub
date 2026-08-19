@@ -1,0 +1,42 @@
+{% if page.hero == "home" %}
+<header class="hero">
+	<nav class="navbar">
+		<div class="logo">
+			<img src="{{ '/Images/TAB_col_background.png' | relative_url }}" alt="University of Manchester" />
+			<img
+				src="{{ '/Images/HRfH Landscape RGB Logo WHITE TEXT HIGH.png' | relative_url }}"
+				alt="Health Research from Home"
+			/>
+		</div>
+		{% include navigation.html %}
+	</nav>
+
+	<div class="hero-content">
+		<h1>Health Research from Home<br />community hub</h1>
+		<p>
+			Welcome to the Health Research from Home hub, giving you all the resources you need to scope, plan
+			and deliver high quality health research using smartphones and wearables
+		</p>
+	</div>
+</header>
+{% else %}
+<header class="subpage-hero">
+	<nav class="subpage-navbar">
+		<div class="subpage-logo">
+			<img
+				src="{{ '/Images/TAB_col_white_background.png' | relative_url }}"
+				alt="University of Manchester"
+			/>
+			<img
+				src="{{ '/Images/HRfH Landscape RGB Logo BLACK TEXT HIGH (1).png' | relative_url }}"
+				alt="Health Research from Home"
+			/>
+		</div>
+		{% include navigation.html %}
+	</nav>
+
+	<div class="subpage-hero-content">
+		<h1>{{ page.hero_title | default: page.title }}</h1>
+	</div>
+</header>
+{% endif %}
