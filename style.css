@@ -463,7 +463,7 @@ main {
 }
 
 .card {
-	background-color: #ececed;
+	background-color: white;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	overflow: hidden;
@@ -762,7 +762,7 @@ footer {
 }
 
 #PPIE-text {
-	max-width: 900px;
+	max-width: 1300px;
 }
 
 #PPIE-text h2 {
@@ -791,7 +791,8 @@ footer {
 }
 
 .video-container {
-	flex: 0 0 75%;
+	flex: 1 1 70%;
+	min-width: 0;
 }
 
 .video-container iframe {
@@ -1247,7 +1248,6 @@ footer {
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 1.7;
-	max-width: 800px;
 	color: #333;
 }
 
@@ -1257,21 +1257,21 @@ footer {
 
 .about-card-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 260px);
-	gap: 24px 8px;
-	justify-content: center;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 24px;
+	width: 100%;
 	margin-bottom: 48px;
 }
 
 .about-card {
-	height: 200px;
+	min-height: 250px;
 	padding: 32px;
 	background: #007a87;
 	display: flex;
 	flex-direction: column;
 	border-radius: 8px;
+	box-sizing: border-box;
 }
-
 .about-card h2 {
 	margin-top: 0;
 	color: white;
@@ -1317,6 +1317,7 @@ footer {
 	gap: 20px;
 	max-width: 900px;
 	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
 .partner-logo {
@@ -1508,7 +1509,7 @@ body {
 .blog-post {
 	display: flex;
 	gap: 40px;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 60px auto;
 	padding: 0 30px;
 	align-items: flex-start;
