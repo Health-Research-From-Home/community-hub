@@ -1,7 +1,0 @@
-title: Health Research from Home community hub
-url: "https://health-research-from-home.github.io"
-baseurl: "/community-hub"
-
-exclude:
-  - README.md
-  - LICENSE

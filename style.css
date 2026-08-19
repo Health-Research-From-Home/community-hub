@@ -4,6 +4,30 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+site-header,
+site-footer {
+	display: block;
+}
+
+.javascript-notice {
+	margin: 0;
+	padding: 1rem;
+	background: #fff3cd;
+	color: #3d3500;
+	text-align: center;
+}
+
+.template-error {
+	padding: 1rem;
+	background: #fff3cd;
+	color: #3d3500;
+	text-align: center;
+}
+
+.template-error p {
+	margin: 0.25rem 0;
+}
+
 /* Homepage */
 
 /* Only affect hero section elements */
