@@ -28,6 +28,35 @@ function markCurrentNavigation(container) {
 	});
 }
 
+function setMenuState(menuContainer, isOpen) {
+	const button = menuContainer.querySelector(".hamburger");
+	menuContainer.classList.toggle("is-open", isOpen);
+	button.setAttribute("aria-expanded", String(isOpen));
+	button.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+}
+
+function setupSubpageNavigation(container) {
+	const menuContainer = container.querySelector(".menu-container");
+	const button = menuContainer?.querySelector(".hamburger");
+
+	if (!menuContainer || !button || button.tagName !== "BUTTON") return;
+
+	button.addEventListener("click", () => {
+		setMenuState(menuContainer, !menuContainer.classList.contains("is-open"));
+	});
+
+	menuContainer.addEventListener("keydown", (event) => {
+		if (event.key !== "Escape" || !menuContainer.classList.contains("is-open")) return;
+
+		setMenuState(menuContainer, false);
+		button.focus();
+	});
+
+	menuContainer.querySelectorAll(".nav-links a").forEach((link) => {
+		link.addEventListener("click", () => setMenuState(menuContainer, false));
+	});
+}
+
 function showTemplateError(element, areaName, error) {
 	console.error(error);
 	element.innerHTML = `
@@ -50,6 +79,7 @@ class SiteHeader extends HTMLElement {
 			}
 
 			markCurrentNavigation(this);
+			if (!isHome) setupSubpageNavigation(this);
 		} catch (error) {
 			showTemplateError(this, "navigation", error);
 		}
