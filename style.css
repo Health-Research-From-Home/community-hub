@@ -330,27 +330,63 @@ header {
 
 .category-buttons {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 15px;
-	align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .category-buttons button {
 	border: none;
-	border-radius: 5px;
-	padding: 10px 15px;
-	background: #007a87;
-	color: white;
-	font-weight: 600;
-	cursor: pointer;
-	font-family: "Montserrat", sans-serif;
-	width: fit-content;
-	white-space: nowrap;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: #007a87;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .category-buttons button:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+    .category-text {
+        padding: 20px;
+    }
+
+    .category-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-buttons button {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+    .category-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .category-buttons button {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+        overflow-wrap: break-word;
+        text-align: left;
+    }
 
 /* Right card */
 
