@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Title</title>
+		<title>Data, methods and technology</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,65 +15,212 @@
 		<script src="Templates/template-loader.js" defer></script>
 	</head>
 	<body>
-		<site-header variant="subpage" heading="Title"></site-header>
+		<site-header variant="subpage" heading="Data, methods and technology"></site-header>
 		<noscript><p class="javascript-notice">Please enable JavaScript to display the site navigation.</p></noscript>
 
 		<!-- MAIN CONTENT -->
 
-<main>
-	<div class="blog-post">
-		<div class="blog-leftcolumn">
-			<h2>Resources</h2>
-			<p>Some example text here</p>
-			<div class="resource-grid">
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Resource title</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource.html">View resource</a>
-					</div>
-				</article>
+		<main>
+			<div class="blog-post">
+				<div class="blog-leftcolumn">
+					<h2>Resources</h2>
+					<p>Some example text here</p>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Another resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-2.html">View resource</a>
-					</div>
-				</article>
+					<div class="dmt-buttons">
+						<a href="#" class="dmt-button">
+							<span>
+								<strong>Analysis code from PAPrKA</strong>
+							</span>
+							<span class="dmt-button-arrow">→</span>
+						</a>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Third resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-3.html">View resource</a>
+						<a href="#" class="dmt-button">
+							<span>
+								<strong>Technology directory</strong>
+							</span>
+							<span class="dmt-button-arrow">→</span>
+						</a>
 					</div>
-				</article>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Fourth resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-4.html">View resource</a>
+					<div class="resource-filter">
+						<button type="button" class="filter-toggle">Filter by topic <span>▾</span></button>
+
+						<div class="filter-options">
+							<label>
+								<input type="checkbox" value="technology" />
+								Technology
+							</label>
+
+							<label>
+								<input type="checkbox" value="data" />
+								Data
+							</label>
+
+							<label>
+								<input type="checkbox" value="methods" />
+								Methods
+							</label>
+						</div>
 					</div>
-				</article>
+
+					<div class="resource-grid">
+						<article class="resource-card" data-category="technology methods">
+							<div class="resource-card-content">
+								<h3>
+									Consumer health measures from smartphones and wearables for population health
+									research
+								</h3>
+
+								<p>Journal article</p>
+
+								<i>Keywords: technology, data, methods</i>
+								<br /><br />
+								<a href="resource.html">View resource</a>
+							</div>
+						</article>
+
+						<article class="resource-card" data-category="technology methods">
+							<div class="resource-card-content">
+								<h3>Expert working group paper</h3>
+								<p>A short description of this resource and what users will find when they open it.</p>
+								<a href="#">View resource</a>
+							</div>
+						</article>
+
+						<article class="resource-card" data-category="data technology methods">
+							<div class="resource-card-content">
+								<h3>
+									Wearables, physical activity & sleep: Important new components for mortality
+									prediction PPT
+								</h3>
+								<i>Keywords: technology, data, methods</i>
+								<a href="#">View resource</a>
+							</div>
+						</article>
+
+						<article class="resource-card" data-category="data">
+							<div class="resource-card-content">
+								<h3>
+									Beyond Steps Unlocking Multimodal Health Discovery with the World’s Largest Wearable
+									Dataset
+								</h3>
+								<i>Keywords: Data</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="methods">
+							<div class="resource-card-content">
+								<h3>Involving patients and the public and missing data</h3>
+								<i>Keywords: Methods</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data methods">
+							<div class="resource-card-content">
+								<h3>
+									Mind the Gap: Understanding, defining and handling missing PPT accelerometer data
+								</h3>
+								<i>Keywords: Data, methods</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data methods">
+							<div class="resource-card-content">
+								<h3>Practical design and clear reporting of simulation studies</h3>
+								<i>Keywords: Data, methods</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data methods">
+							<div class="resource-card-content">
+								<h3>
+									Opening the Black Box: Developing a Transparent Framework for Processing Consumer
+									Smartphone/Wearable Data in Health Research
+								</h3>
+								<i>Keywords: Data, methods</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data methods technology">
+							<div class="resource-card-content">
+								<h3>
+									Wearables at Scale: Technical progress and practical barriers for measuring physical
+									activity in national population health surveillance
+								</h3>
+								<i>Keywords: Data,methods, technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data technology">
+							<div class="resource-card-content">
+								<h3>Digital in the NHS</h3>
+								<i>Keywords: Data, technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data">
+							<div class="resource-card-content">
+								<h3>Health Happens Somewhere: What Might GPS data tell us?</h3>
+								<i>Keywords: Data</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="technology">
+							<div class="resource-card-content">
+								<h3>UMotif PPT: Putting People at the Centre of Their Research Journey</h3>
+								<i>Keywords: Technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="technology">
+							<div class="resource-card-content">
+								<h3>Remote Monitoring with the RADAR-base Platform ​</h3>
+								<i>Keywords: Technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data technology">
+							<div class="resource-card-content">
+								<h3>Google Fitbit + Population Health Research</h3>
+								<i>Keywords: Data, technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="data technology">
+							<div class="resource-card-content">
+								<h3>
+									Wearables, physical activity & sleep: Important new components for mortality
+									prediction
+								</h3>
+								<i>Keywords: Data, technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="technology">
+							<div class="resource-card-content">
+								<h3>Technical challenges and RADAR Base</h3>
+								<i>Keywords: Technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+						<article class="resource-card" data-category="technology">
+							<div class="resource-card-content">
+								<h3>Mobile Health Technologies From Wearables to Real-World Evidence</h3>
+								<i>Keywords: Technology</i>
+								<a href="resource-4.html">View resource</a>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="blog-rightcolumn">
+					<quick-nav></quick-nav>
+				</div>
 			</div>
-		</div>
-
-		<div class="blog-rightcolumn">
-			<quick-nav></quick-nav>
-		</div>
-	</div>
-</main>
+		</main>
 
 		<site-footer></site-footer>
+
+		<script src="resource-filter.js"></script>
 	</body>
 </html>
