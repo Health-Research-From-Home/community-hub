@@ -1,79 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Title</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-		<script src="Templates/template-loader.js" defer></script>
-	</head>
-	<body>
-		<site-header variant="subpage" heading="Title"></site-header>
-		<noscript><p class="javascript-notice">Please enable JavaScript to display the site navigation.</p></noscript>
 
-		<!-- MAIN CONTENT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<main>
-	<div class="blog-post">
-		<div class="blog-leftcolumn">
-			<h2>Resources</h2>
-			<p>Some example text here</p>
-			<div class="resource-grid">
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Resource title</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource.html">View resource</a>
-					</div>
-				</article>
+    <title>Title</title>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Another resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-2.html">View resource</a>
-					</div>
-				</article>
+    <link rel="stylesheet" href="style.css">
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Third resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-3.html">View resource</a>
-					</div>
-				</article>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Fourth resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-4.html">View resource</a>
-					</div>
-				</article>
-			</div>
-		</div>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    >
 
-		<div class="blog-rightcolumn">
-			<quick-nav></quick-nav>
-		</div>
-	</div>
-</main>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
-		<site-footer></site-footer>
-	</body>
+    <script src="Templates/template-loader.js" defer></script>
+</head>
+
+<body>
+
+    <site-header variant="subpage" heading="Title"></site-header>
+
+    <noscript>
+        <p class="javascript-notice">
+            Please enable JavaScript to display the site navigation.
+        </p>
+    </noscript>
+
+    <main>
+
+        <div class="blog-post">
+
+            <div class="blog-leftcolumn">
+
+                <h2>Resources</h2>
+
+                <p>Some example text here</p>
+
+                <div class="dmt-buttons">
+
+                    <a href="#" class="dmt-button">
+                        <span>
+                            <strong>Analysis code from PAPrKA</strong>
+                        </span>
+                        <span class="dmt-button-arrow">→</span>
+                    </a>
+
+                    <a href="#" class="dmt-button">
+                        <span>
+                            <strong>Technology directory</strong>
+                        </span>
+                        <span class="dmt-button-arrow">→</span>
+                    </a>
+
+                </div>
+
+                <section class="resources-section">
+
+                    <div class="resource-filter">
+
+                        <label for="resourceFilter">
+                            Filter by keyword:
+                        </label>
+
+                        <select id="resourceFilter">
+                            <option value="all">All resources</option>
+                        </select>
+
+                    </div>
+
+                    <div class="resources-layout">
+
+                        <div
+                            class="resource-tabs"
+                            role="tablist"
+                            aria-label="Resources"
+                        >
+
+                            <button
+                                class="resource-tab active"
+                                data-resource="0"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="1"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="2"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="3"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="4"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="5"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="6"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="7"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                            <button
+                                class="resource-tab"
+                                data-resource="8"
+                                type="button"
+                                role="tab"
+                            ></button>
+
+                        </div>
+
+                        <div class="resource-card">
+
+                            <a
+                                id="resourceImageLink"
+                                class="resource-image-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <img
+                                    id="resourceImage"
+                                    class="resource-image"
+                                    src=""
+                                    alt=""
+                                >
+                            </a>
+
+                            <div class="resource-content">
+
+                                <div
+                                    id="resourceCategory"
+                                    class="resource-category"
+                                ></div>
+
+                                <h2
+                                    id="resourceTitle"
+                                    class="resource-title"
+                                ></h2>
+
+                                <p
+                                    id="resourceDescription"
+                                    class="resource-description"
+                                ></p>
+
+                                <div
+                                    id="resourceTags"
+                                    class="resource-tags"
+                                ></div>
+
+                                <a
+                                    id="resourceButton"
+                                    class="resource-button"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    VIEW RESOURCE
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="blog-rightcolumn">
+                <quick-nav></quick-nav>
+            </div>
+
+        </div>
+
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="popoutscript.js"></script>
+
+</body>
 </html>
