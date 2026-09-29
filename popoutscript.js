@@ -1,10 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =========================================
        RESOURCE INFORMATION
-
-       All resource content is stored here.
     ========================================= */
 
     const resources = [
@@ -14,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 1 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+                "Data",
+                "Technology",
+                "Methods"
             ],
             image: "Grant Writing Retreat/2026/Screenshot 2026-09-29 112505.png",
             file: "Grant Writing Retreat/2026/11.07.25_HRfH GWR_IG_TopTips.pptx"
@@ -27,9 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 2 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+                "Methods"
             ],
             image: "path/to/resource-2-screenshot.png",
             file: "path/to/resource-2-file.pdf"
@@ -40,9 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 3 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-3-screenshot.png",
             file: "path/to/resource-3-file.pdf"
@@ -53,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 4 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-4-screenshot.png",
             file: "path/to/resource-4-file.pdf"
@@ -66,9 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Patient and public involvement",
             description: "Resource 5 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-5-screenshot.png",
             file: "path/to/resource-5-file.pdf"
@@ -79,9 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 6 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+ 
             ],
             image: "path/to/resource-6-screenshot.png",
             file: "path/to/resource-6-file.pdf"
@@ -92,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 7 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-7-screenshot.png",
             file: "path/to/resource-7-file.pdf"
@@ -105,9 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 8 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-8-screenshot.png",
             file: "path/to/resource-8-file.pdf"
@@ -118,9 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Data, technology, methods",
             description: "Resource 9 description goes here.",
             tags: [
-                "Wearables",
-                "Physical activity",
-                "Sleep"
+
             ],
             image: "path/to/resource-9-screenshot.png",
             file: "path/to/resource-9-file.pdf"
@@ -146,37 +127,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const button = document.getElementById("resourceButton");
 
-    const filter = document.getElementById("resourceFilter");
+    const filter = document.querySelector(".resource-filter");
+    const filterToggle = document.querySelector(".filter-toggle");
+    const filterOptions = document.querySelector(".filter-options");
 
 
     /* =========================================
-       CREATE FILTER OPTIONS
+       CHECK REQUIRED ELEMENTS
     ========================================= */
 
-    const allTags = [];
+    if (!tabs.length) {
+        console.error("No resource tabs found.");
+        return;
+    }
 
-    resources.forEach((resource) => {
+    if (!image || !imageLink || !category || !title || !description || !button) {
+        console.error("One or more resource card elements are missing.");
+        return;
+    }
 
-        resource.tags.forEach((tag) => {
 
-            if (!allTags.includes(tag)) {
-                allTags.push(tag);
-            }
+    /* =========================================
+       CREATE FILTER CHECKBOXES
+    ========================================= */
+
+    if (filterOptions) {
+
+        const allTags = [];
+
+        resources.forEach((resource) => {
+
+            resource.tags.forEach((tag) => {
+
+                if (!allTags.includes(tag)) {
+                    allTags.push(tag);
+                }
+
+            });
 
         });
 
-    });
 
-    allTags.forEach((tag) => {
+        allTags.forEach((tag) => {
 
-        const option = document.createElement("option");
+            const label = document.createElement("label");
 
-        option.value = tag;
-        option.textContent = tag;
+            const checkbox = document.createElement("input");
 
-        filter.appendChild(option);
+            checkbox.type = "checkbox";
+            checkbox.value = tag;
 
-    });
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(tag));
+
+            filterOptions.appendChild(label);
+
+        });
+
+    }
 
 
     /* =========================================
@@ -223,7 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
         image.alt = resource.title;
 
         imageLink.href = resource.file;
-        imageLink.target = "_blank";
 
 
         /* Text */
@@ -237,25 +244,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
         /* Tags */
 
-        tagsContainer.innerHTML = "";
+        if (tagsContainer) {
 
-        resource.tags.forEach((tag) => {
+            tagsContainer.innerHTML = "";
 
-            const tagElement = document.createElement("span");
+            resource.tags.forEach((tag) => {
 
-            tagElement.className = "resource-tag";
+                const tagElement = document.createElement("span");
 
-            tagElement.textContent = tag;
+                tagElement.className = "resource-tag";
 
-            tagsContainer.appendChild(tagElement);
+                tagElement.textContent = tag;
 
-        });
+                tagsContainer.appendChild(tagElement);
+
+            });
+
+        }
 
 
-        /* Button */
+        /* View Resource button */
 
         button.href = resource.file;
-        button.target = "_blank";
 
     }
 
@@ -266,7 +276,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function filterResources() {
 
-        const selectedTag = filter.value;
+        if (!filterOptions) {
+            return;
+        }
+
+
+        const selectedTags = Array.from(
+            filterOptions.querySelectorAll("input:checked")
+        ).map((checkbox) => checkbox.value);
 
 
         tabs.forEach((tab, index) => {
@@ -278,29 +295,27 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
 
-            if (
-                selectedTag === "all" ||
-                resource.tags.includes(selectedTag)
-            ) {
+            const matches =
+                selectedTags.length === 0 ||
+                resource.tags.some((tag) => selectedTags.includes(tag));
 
+
+            if (matches) {
                 tab.style.display = "";
-
             } else {
-
                 tab.style.display = "none";
-
             }
 
         });
 
 
-        /* Show the first matching resource */
+        /* Show first matching resource */
 
         const firstMatchingIndex = resources.findIndex((resource) => {
 
             return (
-                selectedTag === "all" ||
-                resource.tags.includes(selectedTag)
+                selectedTags.length === 0 ||
+                resource.tags.some((tag) => selectedTags.includes(tag))
             );
 
         });
@@ -314,7 +329,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       TAB CLICK EVENTS
+       FILTER BUTTON
+    ========================================= */
+
+    if (filterToggle && filter) {
+
+        filterToggle.addEventListener("click", () => {
+
+            filter.classList.toggle("open");
+
+        });
+
+    }
+
+
+    /* =========================================
+       FILTER CHECKBOX EVENTS
+    ========================================= */
+
+    if (filterOptions) {
+
+        filterOptions.addEventListener("change", () => {
+
+            filterResources();
+
+        });
+
+    }
+
+
+    /* =========================================
+       CLOSE FILTER WHEN CLICKING OUTSIDE
+    ========================================= */
+
+    document.addEventListener("click", (event) => {
+
+        if (
+            filter &&
+            !filter.contains(event.target)
+        ) {
+
+            filter.classList.remove("open");
+
+        }
+
+    });
+
+
+    /* =========================================
+       RESOURCE TAB CLICK EVENTS
     ========================================= */
 
     tabs.forEach((tab, index) => {
@@ -329,18 +392,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       FILTER CHANGE EVENT
-    ========================================= */
-
-    filter.addEventListener("change", () => {
-
-        filterResources();
-
-    });
-
-
-    /* =========================================
-       SHOW FIRST RESOURCE ON PAGE LOAD
+       SHOW FIRST RESOURCE
     ========================================= */
 
     showResource(0);
