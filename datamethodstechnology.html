@@ -2,78 +2,207 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Title</title>
+
 		<link rel="stylesheet" href="style.css" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 		<script src="Templates/template-loader.js" defer></script>
 	</head>
+
 	<body>
 		<site-header variant="subpage" heading="Title"></site-header>
-		<noscript><p class="javascript-notice">Please enable JavaScript to display the site navigation.</p></noscript>
 
-		<!-- MAIN CONTENT -->
+		<noscript>
+			<p class="javascript-notice">Please enable JavaScript to display the site navigation.</p>
+		</noscript>
 
-<main>
-	<div class="blog-post">
-		<div class="blog-leftcolumn">
-			<h2>Resources</h2>
-			<p>Some example text here</p>
-			<div class="resource-grid">
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Resource title</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource.html">View resource</a>
+		<!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+		<main>
+			<div class="blog-post">
+				<!-- =====================================
+                 LEFT BLOG COLUMN
+            ====================================== -->
+
+				<div class="blog-leftcolumn">
+					<h2>Resources</h2>
+
+					<p>Some example text here</p>
+
+					<!-- EXISTING BUTTONS -->
+
+					<div class="dmt-buttons">
+						<a href="#" class="dmt-button">
+							<span>
+								<strong> Analysis code from PAPrKA </strong>
+							</span>
+
+							<span class="dmt-button-arrow"> → </span>
+						</a>
+
+						<a href="#" class="dmt-button">
+							<span>
+								<strong> Technology directory </strong>
+							</span>
+
+							<span class="dmt-button-arrow"> → </span>
+						</a>
 					</div>
-				</article>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Another resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-2.html">View resource</a>
-					</div>
-				</article>
+<div class="resource-filter">
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Third resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-3.html">View resource</a>
-					</div>
-				</article>
+    <label for="resourceFilter">Filter by keyword:</label>
 
-				<article class="resource-card">
-					<div class="resource-card-content">
-						<h3>Fourth resource</h3>
-						<p>
-							A short description of this resource and what users will find when they open it.
-						</p>
-						<a href="resource-4.html">View resource</a>
-					</div>
-				</article>
+    <select id="resourceFilter">
+        <option value="all">All resources</option>
+    </select>
+
+</div>
+
+					<section class="resources-section">
+						<div class="resources-layout">
+							<!-- LEFT: RESOURCE TABS -->
+
+							<div class="resource-tabs" role="tablist">
+								<button class="resource-tab active" data-resource="0" type="button">
+									Wearables, physical activity & sleep: Important new components for mortality
+									prediction PPT
+								</button>
+
+								<button class="resource-tab" data-resource="1" type="button">
+									Consumer health measures from smartphones and wearables for population health
+									research
+								</button>
+
+								<button class="resource-tab" data-resource="2" type="button">
+									New schema for smartphone and wearables specific metadata fields to enable better
+									discoverability of existing S&W datasets for research. Encourage the sharing of S&W
+									datasets on HDR UK Innovation Gateway
+								</button>
+
+								<button class="resource-tab" data-resource="3" type="button">
+									Beyond Steps Unlocking Multimodal Health Discovery with the World’s Largest Wearable
+									Dataset
+								</button>
+
+								<button class="resource-tab" data-resource="4" type="button">
+									Involving patients and the public and missing data
+								</button>
+
+								<button class="resource-tab" data-resource="5" type="button">
+									Mind the Gap: Understanding, defining and handling missing PPT accelerometer data
+								</button>
+
+								<button class="resource-tab" data-resource="6" type="button">
+									Practical design and clear reporting of simulation studies 
+								</button>
+
+								<button class="resource-tab" data-resource="7" type="button">
+									Opening the Black  Box:  Developing  a Transparent Framework for Processing Consumer Smartphone/Wearable Data in Health Research
+								</button>
+								
+								<button class="resource-tab" data-resource="8" type="button">
+									    Wearables at Scale:  
+Technical progress and practical barriers for measuring 
+physical activity in national population health surveillance 
+								</button>
+<button class="resource-tab" data-resource="9" type="button">
+									    Digital in the NHS
+								</button>
+								<button class="resource-tab" data-resource="10" type="button">
+									    Health Happens Somewhere: What Might GPS Data Tell Us?
+								</button>
+								<button class="resource-tab" data-resource="11" type="button">
+									    UMotif PPT: Putting People at the Centre of Their Research Journey
+								</button>
+								<button class="resource-tab" data-resource="12" type="button">
+									    RADAR-Base PPT
+								</button>
+								<button class="resource-tab" data-resource="13" type="button">
+									    Technical challenges and RADAR Base
+								</button>
+								<button class="resource-tab" data-resource="14" type="button">
+									    Mobile Health Technologies From Wearables to Real-World Evidence
+								</button>
+								<button class="resource-tab" data-resource="15" type="button">
+									    Using Touch Screen Devices For Cognitive Research
+								</button>
+
+							</div>
+
+							<!-- RIGHT: RESOURCE CARD -->
+
+							<div class="resource-card">
+								<!-- RESOURCE IMAGE -->
+
+								<a
+									id="resourceImageLink"
+									class="resource-image-link"
+									href="Grant Writing Retreat/2026/11.07.25_HRfH GWR_IG_TopTips.pptx"
+									target="_blank"
+								>
+									<img
+										id="resourceImage"
+										class="resource-image"
+										src="Grant Writing Retreat/2026/Screenshot 2026-09-29 112505.png"
+										alt="Storm damage roofing"
+									/>
+
+								<!-- RESOURCE TEXT -->
+
+<div class="resource-content">
+
+    <div id="resourceCategory" class="resource-category"></div>
+
+    <h2 id="resourceTitle" class="resource-title"></h2>
+
+    <p id="resourceDescription" class="resource-description"></p>
+
+    <a
+        id="resourceButton"
+        class="resource-button"
+        href="#"
+        target="_blank"
+    >
+        VIEW RESOURCE
+    </a>
+
+</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- END BLOG LEFT COLUMN -->
+
+				<!-- =====================================
+                 RIGHT BLOG NAVIGATION
+            ====================================== -->
+
+				<div class="blog-rightcolumn">
+					<quick-nav></quick-nav>
+				</div>
+				<!-- END BLOG RIGHT COLUMN -->
 			</div>
-		</div>
-
-		<div class="blog-rightcolumn">
-			<quick-nav></quick-nav>
-		</div>
-	</div>
-</main>
+		</main>
 
 		<site-footer></site-footer>
+
+		<script src="popoutscript.js"></script>
 	</body>
 </html>
