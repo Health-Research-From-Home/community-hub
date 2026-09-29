@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Wearables, physical activity & sleep: Important new components for mortality prediction",
             category: "Data, technology, methods",
-            description: "Resource 1 description goes here.",
+            description: "Placeholder description.",
             tags: [
                 "Data",
                 "Technology",
@@ -20,91 +20,138 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         {
-            title: "Resource 2 title",
+            title: "Consumer health measures from smartphones and wearables for population health research",
             category: "Data, technology, methods",
-            description: "Resource 2 description goes here.",
-            tags: [
-                "Methods"
-            ],
-            image: "path/to/resource-2-screenshot.png",
-            file: "path/to/resource-2-file.pdf"
+            description: "Placeholder description for the consumer health measures resource.",
+            tags: [],
+            image: "images/resource-2-thumbnail.jpg",
+            file: "resources/resource-2.pdf"
         },
 
         {
-            title: "Resource 3 title",
+            title: "New schema for smartphone and wearables specific metadata fields to enable better discoverability of existing S&W datasets for research",
             category: "Data, technology, methods",
-            description: "Resource 3 description goes here.",
-            tags: [
-
-            ],
-            image: "path/to/resource-3-screenshot.png",
-            file: "path/to/resource-3-file.pdf"
+            description: "Placeholder description for the smartphone and wearables metadata schema resource.",
+            tags: [],
+            image: "images/resource-3-thumbnail.jpg",
+            file: "resources/resource-3.pdf"
         },
 
         {
-            title: "Resource 4 title",
+            title: "Beyond Steps Unlocking Multimodal Health Discovery with the World’s Largest Wearable Dataset",
             category: "Data, technology, methods",
-            description: "Resource 4 description goes here.",
-            tags: [
-
-            ],
-            image: "path/to/resource-4-screenshot.png",
-            file: "path/to/resource-4-file.pdf"
+            description: "Placeholder description for the Beyond Steps resource.",
+            tags: [],
+            image: "images/resource-4-thumbnail.jpg",
+            file: "resources/resource-4.pdf"
         },
 
         {
-            title: "Resource 5 title",
+            title: "Involving patients and the public and missing data",
             category: "Patient and public involvement",
-            description: "Resource 5 description goes here.",
-            tags: [
-
-            ],
-            image: "path/to/resource-5-screenshot.png",
-            file: "path/to/resource-5-file.pdf"
+            description: "Placeholder description for the patient and public involvement resource.",
+            tags: [],
+            image: "images/resource-5-thumbnail.jpg",
+            file: "resources/resource-5.pdf"
         },
 
         {
-            title: "Resource 6 title",
-            category: "Data, technology, methods",
-            description: "Resource 6 description goes here.",
-            tags: [
- 
-            ],
+            title: "Mind the Gap: Understanding, defining and handling missing PPT accelerometer data",
+            category: "",
+            description: "",
+            tags: [],
             image: "path/to/resource-6-screenshot.png",
             file: "path/to/resource-6-file.pdf"
         },
 
         {
-            title: "Resource 7 title",
-            category: "Data, technology, methods",
-            description: "Resource 7 description goes here.",
-            tags: [
-
-            ],
+            title: "Practical design and clear reporting of simulation studies",
+            category: "",
+            description: "",
+            tags: [],
             image: "path/to/resource-7-screenshot.png",
             file: "path/to/resource-7-file.pdf"
         },
 
         {
-            title: "Resource 8 title",
-            category: "Data, technology, methods",
-            description: "Resource 8 description goes here.",
-            tags: [
-
-            ],
+            title: "Opening the Black Box: Developing a Transparent Framework for Processing Consumer Smartphone/Wearable Data in Health Research",
+            category: "",
+            description: "",
+            tags: [],
             image: "path/to/resource-8-screenshot.png",
             file: "path/to/resource-8-file.pdf"
         },
 
         {
-            title: "Resource 9 title",
-            category: "Data, technology, methods",
-            description: "Resource 9 description goes here.",
-            tags: [
-
-            ],
+            title: "Wearables at Scale: Technical progress and practical barriers for measuring physical activity in national population health surveillance",
+            category: "",
+            description: "",
+            tags: [],
             image: "path/to/resource-9-screenshot.png",
             file: "path/to/resource-9-file.pdf"
+        },
+
+        {
+            title: "Digital in the NHS",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-10-screenshot.png",
+            file: "path/to/resource-10-file.pdf"
+        },
+
+        {
+            title: "Health Happens Somewhere: What Might GPS Data Tell Us?",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-11-screenshot.png",
+            file: "path/to/resource-11-file.pdf"
+        },
+
+        {
+            title: "UMotif PPT: Putting People at the Centre of Their Research Journey",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-12-screenshot.png",
+            file: "path/to/resource-12-file.pdf"
+        },
+
+        {
+            title: "RADAR-Base PPT",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-13-screenshot.png",
+            file: "path/to/resource-13-file.pdf"
+        },
+
+        {
+            title: "Technical challenges and RADAR Base",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-14-screenshot.png",
+            file: "path/to/resource-14-file.pdf"
+        },
+
+        {
+            title: "Mobile Health Technologies From Wearables to Real-World Evidence",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-15-screenshot.png",
+            file: "path/to/resource-15-file.pdf"
+        },
+
+        {
+            title: "Using Touch Screen Devices For Cognitive Research",
+            category: "",
+            description: "",
+            tags: [],
+            image: "path/to/resource-16-screenshot.png",
+            file: "path/to/resource-16-file.pdf"
         }
 
     ];
