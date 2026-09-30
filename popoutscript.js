@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         {
             title: "Wearables, physical activity & sleep: Important new components for mortality prediction",
-            category: "Data, technology, methods",
             description: "Placeholder description.",
             tags: [
                 "Data",
