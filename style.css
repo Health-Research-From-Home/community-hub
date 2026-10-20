@@ -2059,14 +2059,10 @@ body {
 
 .resource-image {
     width: 100%;
-    height: 320px;
-
-    object-fit: cover;
+    height: auto;
     display: block;
-
     transition: transform 0.3s ease;
 }
-
 .resource-image-link:hover .resource-image {
     transform: scale(1.02);
 }
@@ -2158,6 +2154,18 @@ body {
 .resource-button:visited {
     color: #ffffff !important;
     text-decoration: none !important;
+}
+
+
+.resource-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.resource-buttons [hidden] {
+    display: none;
 }
 
 

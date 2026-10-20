@@ -1,274 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Data, technology, methods</title>
 
-    <title>Data, technology, methods </title>
+		<link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-    >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    >
+		<script src="Templates/template-loader.js" defer></script>
+	</head>
 
-    <script src="Templates/template-loader.js" defer></script>
-</head>
+	<body>
+		<site-header variant="subpage" heading="Data, technology, methods"></site-header>
 
-<body>
+		<noscript>
+			<p class="javascript-notice">Please enable JavaScript to display the site navigation.</p>
+		</noscript>
 
-    <site-header variant="subpage" heading="Data, technology, methods"></site-header>
+		<main>
+			<div class="blog-post">
+				<div class="blog-leftcolumn">
+					<h2>Resources</h2>
 
-    <noscript>
-        <p class="javascript-notice">
-            Please enable JavaScript to display the site navigation.
-        </p>
-    </noscript>
+					<p>Some example text here</p>
 
-    <main>
+					<div class="dmt-buttons">
+						<a href="#" class="dmt-button">
+							<span>
+								<strong>Analysis code from PAPrKA</strong>
+							</span>
+							<span class="dmt-button-arrow">→</span>
+						</a>
 
-        <div class="blog-post">
+						<a href="#" class="dmt-button">
+							<span>
+								<strong>Technology directory</strong>
+							</span>
+							<span class="dmt-button-arrow">→</span>
+						</a>
 
-            <div class="blog-leftcolumn">
+						<a href="#" class="dmt-button">
+							<span>
+								<strong>Discover smartphone and wearable datasets</strong>
+							</span>
+							<span class="dmt-button-arrow">→</span>
+						</a>
+					</div>
 
-                <h2>Resources</h2>
+					<section class="resources-section">
+						<div class="resource-filter">
+							<button type="button" class="filter-toggle">Filter by topic <span>▾</span></button>
 
-                <p>Some example text here</p>
+							<div class="filter-options">
+								<!-- JavaScript will add the keyword checkboxes here -->
+							</div>
+						</div>
 
-                <div class="dmt-buttons">
+						<div class="resources-layout">
+							<div class="resource-tabs" role="tablist" aria-label="Resources">
+								<button class="resource-tab active" data-resource="0" type="button" role="tab"></button>
 
-                    <a href="#" class="dmt-button">
-                        <span>
-                            <strong>Analysis code from PAPrKA</strong>
-                        </span>
-                        <span class="dmt-button-arrow">→</span>
-                    </a>
+								<button class="resource-tab" data-resource="1" type="button" role="tab"></button>
 
-                    <a href="#" class="dmt-button">
-                        <span>
-                            <strong>Technology directory</strong>
-                        </span>
-                        <span class="dmt-button-arrow">→</span>
-                    </a>
+								<button class="resource-tab" data-resource="2" type="button" role="tab"></button>
 
-                </div>
+								<button class="resource-tab" data-resource="3" type="button" role="tab"></button>
 
-                <section class="resources-section">
+								<button class="resource-tab" data-resource="4" type="button" role="tab"></button>
 
-                    <div class="resource-filter">
+								<button class="resource-tab" data-resource="5" type="button" role="tab"></button>
 
-                        <button type="button" class="filter-toggle">
-                            Filter by topic <span>▾</span>
-                        </button>
+								<button class="resource-tab" data-resource="6" type="button" role="tab"></button>
 
-                        <div class="filter-options">
-                            <!-- JavaScript will add the keyword checkboxes here -->
-                        </div>
+								<button class="resource-tab" data-resource="7" type="button" role="tab"></button>
 
-                    </div>
+								<button class="resource-tab" data-resource="8" type="button" role="tab"></button>
 
-                    <div class="resources-layout">
+								<button class="resource-tab" data-resource="9" type="button" role="tab"></button>
 
-                        <div
-                            class="resource-tabs"
-                            role="tablist"
-                            aria-label="Resources"
-                        >
+								<button class="resource-tab" data-resource="10" type="button" role="tab"></button>
 
-                            <button
-                                class="resource-tab active"
-                                data-resource="0"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<button class="resource-tab" data-resource="11" type="button" role="tab"></button>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="1"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<button class="resource-tab" data-resource="12" type="button" role="tab"></button>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="2"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<button class="resource-tab" data-resource="13" type="button" role="tab"></button>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="3"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<button class="resource-tab" data-resource="14" type="button" role="tab"></button>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="4"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<button class="resource-tab" data-resource="15" type="button" role="tab"></button>
+							</div>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="5"
-                                type="button"
-                                role="tab"
-                            ></button>
+							<div class="resource-card">
+								<a
+									id="resourceImageLink"
+									class="resource-image-link"
+									href="#"
+									target="_blank"
+									rel="noopener"
+								>
+									<img id="resourceImage" class="resource-image" src="" alt="" />
+								</a>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="6"
-                                type="button"
-                                role="tab"
-                            ></button>
+								<div class="resource-content">
+									<div id="resourceCategory" class="resource-category"></div>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="7"
-                                type="button"
-                                role="tab"
-                            ></button>
+									<h2 id="resourceTitle" class="resource-title"></h2>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="8"
-                                type="button"
-                                role="tab"
-                            ></button>
+									<p id="resourceDescription" class="resource-description"></p>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="9"
-                                type="button"
-                                role="tab"
-                            ></button>
+									<div id="resourceTags" class="resource-tags"></div>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="10"
-                                type="button"
-                                role="tab"
-                            ></button>
+									<div class="resource-buttons">
+										<a
+											id="resourceButton"
+											class="resource-button"
+											href="#"
+											target="_blank"
+											rel="noopener"
+										>
+											VIEW RESOURCE
+										</a>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="11"
-                                type="button"
-                                role="tab"
-                            ></button>
+										<a
+											id="resourceExtraButton"
+											class="resource-button"
+											href="#"
+											target="_blank"
+											rel="noopener"
+											hidden
+										>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="12"
-                                type="button"
-                                role="tab"
-                            ></button>
+				<div class="blog-rightcolumn">
+					<quick-nav></quick-nav>
+				</div>
+			</div>
+		</main>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="13"
-                                type="button"
-                                role="tab"
-                            ></button>
+		<site-footer></site-footer>
 
-                            <button
-                                class="resource-tab"
-                                data-resource="14"
-                                type="button"
-                                role="tab"
-                            ></button>
-
-                            <button
-                                class="resource-tab"
-                                data-resource="15"
-                                type="button"
-                                role="tab"
-                            ></button>
-
-                        </div>
-
-                        <div class="resource-card">
-
-                            <a
-                                id="resourceImageLink"
-                                class="resource-image-link"
-                                href="#"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <img
-                                    id="resourceImage"
-                                    class="resource-image"
-                                    src=""
-                                    alt=""
-                                >
-                            </a>
-
-                            <div class="resource-content">
-
-                                <div
-                                    id="resourceCategory"
-                                    class="resource-category"
-                                ></div>
-
-                                <h2
-                                    id="resourceTitle"
-                                    class="resource-title"
-                                ></h2>
-
-                                <p
-                                    id="resourceDescription"
-                                    class="resource-description"
-                                ></p>
-
-                                <div
-                                    id="resourceTags"
-                                    class="resource-tags"
-                                ></div>
-
-                                <a
-                                    id="resourceButton"
-                                    class="resource-button"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener"
-                                >
-                                    VIEW RESOURCE
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-            </div>
-
-            <div class="blog-rightcolumn">
-                <quick-nav></quick-nav>
-            </div>
-
-        </div>
-
-    </main>
-
-    <site-footer></site-footer>
-
-    <script src="popoutscript.js"></script>
-
-</body>
+		<script src="popoutscript.js"></script>
+	</body>
 </html>
