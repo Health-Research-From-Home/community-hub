@@ -1,254 +1,357 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>PPIE</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-		<script src="Templates/template-loader.js" defer></script>
-		<script src="Scripts/ppie.js" defer></script>
-	</head>
-	<body>
-		<site-header variant="subpage" heading="PPIE"></site-header>
-		<noscript><p class="javascript-notice">Please enable JavaScript to display the site navigation.</p></noscript>
 
-		<main>
-			<div class="blog-post">
-				<div class="blog-leftcolumn">
-					<section id="PPIE-text">
-						<div class="video-info-box">
-							<div class="video-container">
-								<iframe
-									src="https://www.youtube.com/embed/w8VZLBjD2kw"
-									title="Video"
-									frameborder="0"
-									allowfullscreen
-								></iframe>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>PPIE</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+	<script src="Templates/template-loader.js" defer></script>
+	<script src="Scripts/ppie.js" defer></script>
+</head>
+
+<body>
+	<site-header variant="subpage" heading="PPIE"></site-header>
+	<noscript>
+		<p class="javascript-notice">Please enable JavaScript to display the site navigation.</p>
+	</noscript>
+
+	<main>
+		<div class="blog-post">
+			<!-- LEFT COLUMN: Main page content -->
+			<div class="blog-leftcolumn">
+				<section id="PPIE-text">
+					<!-- FEATURE VIDEO BOX -->
+					<div class="video-info-box">
+						<div class="video-info-content">
+							<h2>An introduction to PPIE</h2>
+
+							<p>
+								This video gives you an overview of Patient and Public Involvement and Engagement
+								(PPIE) at Health Research from Home
+							</p>
+
+							<div class="video-meta">
+								<span>◷ 52 min</span>
 							</div>
 
-							<div class="info-content">
-								<h2>An introduction to PPIE</h2>
-								<p>This video gives you an overview of PPIE at Health Research from Home</p>
-							</div>
-						</div>
-
-						<h2>Research lifecycle</h2>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
-
-						<!-- INTERACTIVE IMAGE -->
-
-						<div class="interactive-image" aria-label="Explore PPIE topics in the research lifecycle">
-							<img
-								src="Images/Research lifecycle v 2.png"
-								alt="Audience members taking part in a research event"
-								class="content-image"
-							/>
-
-							<div class="image-hotspot hotspot-video-one">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-one"
-									aria-label="Video 1: Starting with the right question"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-one" aria-hidden="true">
-									<strong>Video 1: Starting with the right question</strong>
-									PPIE in practice: priority-setting groups, lived-experience panels and early
-									advisory conversations. <br />
-									<br />
-									How patients and public can help shape the research before a protocol or funding
-									<span class="hotspot-link">Watch the video</span>
-								</div>
-							</div>
-
-							<div class="image-hotspot hotspot-video-two">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-two"
-									aria-label="Video 2: Designing the study"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-two" aria-hidden="true">
-									<strong>Video 2: Designing the study</strong>
-
-									PPIE in practice: advisory groups, co-design workshops and public contributor
-									review.
-									<br />
-									<br />
-									How patients and the public can contribute to study design and ensure research is
-									practical, acceptable and inclusive.
-									<span class="hotspot-link">Watch the video</span>
-								</div>
-							</div>
-
-							<div class="image-hotspot hotspot-video-three">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-three"
-									aria-label="Video 3: Setting up the study and preparing for delivery"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-three" aria-hidden="true">
-									<strong>Video 3: Setting up the study and preparing for delivery</strong>
-									PPIE in practice: study advisory groups, pilot feedback and contributor input into
-									study processes
-									<br />
-									<br />
-									How PPIE can help researchers prepare for study delivery before recruitment begins.
-									<span class="hotspot-link">Watch the video</span>
-								</div>
-							</div>
-
-							<div class="image-hotspot hotspot-video-four">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-four"
-									aria-label="Video 4: Running the study"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-four" aria-hidden="true">
-									<strong>Video 4: Running the study</strong>
-									PPIE in practice: ongoing advisory groups, project steering input and feedback
-									during delivery
-									<br />
-									<br />
-									How patients and the public can continue to shape the research once recruitment and
-									data collection have begun
-									<span class="hotspot-link">Watch the video</span>
-								</div>
-							</div>
-
-							<div class="image-hotspot hotspot-video-five">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-five"
-									aria-label="Video 5: Making sense of the findings"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-five" aria-hidden="true">
-									<strong>Video 5: Making sense of the findings</strong>
-									PPIE in practice: interpretation workshops, analysis advisory groups and patient
-									co-researchers
-									<br />
-									<br />
-									How patients and the public can help interpret data and understand what findings
-									mean
-									<span class="hotspot-link">Watch the video</span>
-								</div>
-							</div>
-
-							<div class="image-hotspot hotspot-video-six">
-								<button
-									type="button"
-									class="hotspot-trigger"
-									aria-expanded="false"
-									aria-controls="hotspot-card-six"
-									aria-label="Video 6: Sharing findings and planning what comes next"
-								>
-									<span class="hotspot-marker" aria-hidden="true"></span>
-								</button>
-
-								<div class="hotspot-card" id="hotspot-card-six" aria-hidden="true">
-									<strong>Video 6: Sharing findings and planning what comes next</strong>
-									PPIE in practice: dissemination partners, co-authors and follow-on advisory groups
-									<br />
-									<br />
-									How patients and the public can shape dissemination, feedback to participants and
-									future research
-									<span class="hotspot-link">Watch the video</span>
-								</div>
+							<div class="video-buttons">
+								<a href="#video" class="watch-now"> ▶ Watch Now </a>
 							</div>
 						</div>
-					</section>
 
-					<!-- VIDEO CARDS -->
+						<div class="intro-video-thumbnail" id="PPIE-video">
+							<img src="DMT resources/Images/Resource coming.png" alt="PPIE introduction video"
+								class="thumbnail-image" />
 
-					<section class="video-resources">
-						<h2>Example videos</h2>
-
-						<div class="video-card-container">
-							<article class="video-card">
-								<iframe
-									src="https://www.youtube.com/embed/w8VZLBjD2kw"
-									title="Research video"
-									allowfullscreen
-								></iframe>
-
-								<div class="video-card-content">
-									<h3>Example video</h3>
-									<p>Example video description.</p>
-								</div>
-							</article>
-
-							<article class="video-card">
-								<iframe
-									src="https://www.youtube.com/embed/VIDEO2"
-									title="Research video"
-									allowfullscreen
-								></iframe>
-
-								<div class="video-card-content">
-									<h3>Example video</h3>
-									<p>Example video description.</p>
-								</div>
-							</article>
-
-							<article class="video-card">
-								<iframe
-									src="https://www.youtube.com/embed/VIDEO3"
-									title="Research video"
-									allowfullscreen
-								></iframe>
-
-								<div class="video-card-content">
-									<h3>Example video</h3>
-									<p>Example video description.</p>
-								</div>
-							</article>
+							<button type="button" class="play-button" aria-label="Play video" onclick="playPPIEVideo()">
+								▶
+							</button>
 						</div>
-					</section>
-				</div>
-
-				<div class="blog-rightcolumn">
-					<div class="blog-rightcard">
-						<quick-nav></quick-nav>
 					</div>
-				</div>
-			</div>
-		</main>
 
-		<site-footer></site-footer>
-	</body>
+					<!-- RESEARCH LIFECYCLE -->
+					<h2>Research lifecycle</h2>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+
+					<div class="interactive-image" aria-label="Explore PPIE topics in the research lifecycle">
+						<img src="PPIE resources/HRfH branding.png" alt="Research lifecycle graphic"
+							class="content-image" />
+
+						<div class="image-hotspot hotspot-video-one">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-one" aria-label="Video 1: Starting with the right question">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-one" aria-hidden="true">
+								<strong>Video 1: Starting with the right question</strong>
+								PPIE in practice: priority-setting groups, lived-experience panels and early
+								advisory conversations. <br />
+								<br />
+								How patients and public can help shape the research before a protocol or funding
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+
+						<div class="image-hotspot hotspot-video-two">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-two" aria-label="Video 2: Designing the study">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-two" aria-hidden="true">
+								<strong>Video 2: Designing the study</strong>
+
+								PPIE in practice: advisory groups, co-design workshops and public contributor
+								review.
+								<br />
+								<br />
+								How patients and the public can contribute to study design and ensure research is
+								practical, acceptable and inclusive.
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+
+						<div class="image-hotspot hotspot-video-three">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-three"
+								aria-label="Video 3: Setting up the study and preparing for delivery">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-three" aria-hidden="true">
+								<strong>Video 3: Setting up the study and preparing for delivery</strong>
+								PPIE in practice: study advisory groups, pilot feedback and contributor input into
+								study processes
+								<br />
+								<br />
+								How PPIE can help researchers prepare for study delivery before recruitment begins.
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+
+						<div class="image-hotspot hotspot-video-four">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-four" aria-label="Video 4: Running the study">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-four" aria-hidden="true">
+								<strong>Video 4: Running the study</strong>
+								PPIE in practice: ongoing advisory groups, project steering input and feedback
+								during delivery
+								<br />
+								<br />
+								How patients and the public can continue to shape the research once recruitment and
+								data collection have begun
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+
+						<div class="image-hotspot hotspot-video-five">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-five" aria-label="Video 5: Making sense of the findings">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-five" aria-hidden="true">
+								<strong>Video 5: Making sense of the findings</strong>
+								PPIE in practice: interpretation workshops, analysis advisory groups and patient
+								co-researchers
+								<br />
+								<br />
+								How patients and the public can help interpret data and understand what findings
+								mean
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+
+						<div class="image-hotspot hotspot-video-six">
+							<button type="button" class="hotspot-trigger" aria-expanded="false"
+								aria-controls="hotspot-card-six"
+								aria-label="Video 6: Sharing findings and planning what comes next">
+								<span class="hotspot-marker" aria-hidden="true"></span>
+							</button>
+
+							<div class="hotspot-card" id="hotspot-card-six" aria-hidden="true">
+								<strong>Video 6: Sharing findings and planning what comes next</strong>
+								PPIE in practice: dissemination partners, co-authors and follow-on advisory groups
+								<br />
+								<br />
+								How patients and the public can shape dissemination, feedback to participants and
+								future research
+								<span class="hotspot-link">Watch the video</span>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="ppie-resources-section" id="resources" aria-labelledby="ppie-resources-title">
+					<div class="ppie-resources-heading">
+						<div>
+							<h2 id="ppie-resources-title">Resources</h2>
+							<p class="ppie-resources-intro">
+								Discover useful guides, tools and further information about PPIE.
+							</p>
+						</div>
+
+						<div class="ppie-resources-controls">
+							<button class="ppie-resource-arrow" type="button" data-resource-direction="-1"
+								aria-controls="ppie-resources-track" aria-disabled="true">
+								<span aria-hidden="true">←</span> Previous
+							</button>
+							<button class="ppie-resource-arrow" type="button" data-resource-direction="1"
+								aria-controls="ppie-resources-track" aria-disabled="true">
+								Next <span aria-hidden="true">→</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="ppie-resources-track" id="ppie-resources-track" tabindex="0"
+						role="region" aria-label="PPIE resources" aria-describedby="ppie-resources-help">
+						<article class="ppie-resource-card">
+							<div class="ppie-resource-card-body">
+								<h3>Reporting checklist for PPIE</h3>
+								<p>
+									Learn what patient and public involvement and engagement means in health
+									research.
+								</p>
+								<a href="https://www.bmj.com/content/358/bmj.j3453" class="ppie-resource-link"
+									aria-label="View reporting checklist for PPIE">View
+									resource</a>
+							</div>
+						</article>
+
+						<article class="ppie-resource-card">
+							<div class="ppie-resource-card-body">
+								<h3>Involving patients and the public and missing data (PPT) </h3>
+								<p>
+									Practical prompts to help plan meaningful public involvement in your research.
+								</p>
+								<a href="PPIE resources/Lynn_Involving patients and the public in missing data_HRfH webinar_ 06_05_26.pptx"
+									class="ppie-resource-link" aria-label="View involving patients and the public and missing data presentation">View resource</a>
+							</div>
+						</article>
+
+						<article class="ppie-resource-card">
+							<div class="ppie-resource-card-body">
+								<h3>NHS Digital Literacy tool</h3>
+								<p>
+									Consider accessibility, representation and ways to make participation inclusive.
+								</p>
+								<p class="ppie-resource-pending">Resource link coming soon</p>
+							</div>
+						</article>
+
+						<article class="ppie-resource-card">
+							<div class="ppie-resource-card-body">
+								<h3>Taking back control (PPT) </h3>
+								<p>Explore how patients and members of the public can contribute to research.</p>
+								<p class="ppie-resource-pending">Resource link coming soon</p>
+							</div>
+						</article>
+
+						<article class="ppie-resource-card">
+							<div class="ppie-resource-card-body">
+								<h3>Leila Hamrang (video) </h3>
+								<p>Discover examples of how public contributions can shape research decisions.</p>
+								<p class="ppie-resource-pending">Resource link coming soon</p>
+							</div>
+						</article>
+					</div>
+					<div class="ppie-resources-footer">
+						<p id="ppie-resources-help">Use Previous and Next, or focus the list and use the arrow keys.</p>
+						<p id="ppie-resources-status" role="status" aria-live="polite" aria-atomic="true"></p>
+					</div>
+				</section>
+
+				<!-- VIDEO CARDS -->
+				<section class="video-resources">
+					<h2>Example videos</h2>
+
+					<div class="video-card-container">
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/w8VZLBjD2kw" title="Research video"
+								allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/VIDEO2" title="Research video" allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/VIDEO3" title="Research video" allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/VIDEO3" title="Research video" allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/VIDEO3" title="Research video" allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+
+						<article class="video-card">
+							<iframe src="https://www.youtube.com/embed/VIDEO3" title="Research video" allowfullscreen>
+							</iframe>
+
+							<div class="video-card-content">
+								<h3>Example video</h3>
+								<p>Example video description.</p>
+								<div class="video-card-meta">
+									<span>◷ 52 min</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<!-- END LEFT COLUMN -->
+
+			<!-- RIGHT COLUMN: Quick navigation -->
+			<aside class="blog-rightcolumn">
+				<quick-nav></quick-nav>
+			</aside>
+		</div>
+	</main>
+
+	<site-footer></site-footer>
+</body>
+
 </html>

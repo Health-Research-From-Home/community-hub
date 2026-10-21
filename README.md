@@ -39,6 +39,16 @@ The homepage uses `variant="home"` and does not need a `heading` attribute:
 
 Update the relevant file in `Templates` when changing a header, navigation, or footer; the change will appear on every page that uses it. Responsive navigation is handled by `style.css`, so separate desktop and mobile templates are not needed.
 
+Use an `<aside>` for the right column, with the shared components directly inside it:
+
+```html
+<aside class="blog-rightcolumn">
+	<quick-nav></quick-nav>
+</aside>
+```
+
+The quick navigation template already includes its card, so it needs no extra card wrapper. Blog articles can also put `<quick-blogs></quick-blogs>` directly inside the same aside.
+
 JavaScript used only by a particular page belongs in `Scripts`. For example, `Scripts/ppie.js` controls the interactive image hotspots on `ppie.html`.
 
 ## Creating a new page
