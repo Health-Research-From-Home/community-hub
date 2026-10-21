@@ -1050,7 +1050,7 @@ footer {
 	border: 4px solid white;
 	border-radius: 50%;
 
-	background: rgba(2, 151, 167, 0.72);
+	background: rgba(230, 10, 10, 0.80);
 
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 
@@ -1135,7 +1135,7 @@ footer {
 
 .image-hotspot:hover .hotspot-marker,
 .image-hotspot.is-open .hotspot-marker {
-	background: rgba(107, 44, 145, 0.82);
+	background: rgba(149, 22, 225, 0.9);
 	transform: scale(1.14);
 }
 
@@ -1169,10 +1169,11 @@ footer {
   min-width: 0;
 }
 
-.ppie-resources-heading {
+.ppie-resources-section .ppie-resources-heading {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 22px;
 }
@@ -1185,64 +1186,90 @@ footer {
   letter-spacing: 0.13em;
 }
 
-.ppie-resources-heading h2 {
+.ppie-resources-section .ppie-resources-heading h2 {
   margin: 0 0 8px;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 500;
-  color: #28372c;
+  font-weight: 600;
+  color: #007a87;
 }
 
-.ppie-resources-intro {
+.ppie-resources-section .ppie-resources-intro {
   max-width: 540px;
   margin: 0;
-  color: #646a64;
+  color: #4b5563;
   line-height: 1.6;
 }
 
 .ppie-resources-controls {
-  display: flex;
+  display: none;
   flex-shrink: 0;
   gap: 8px;
 }
 
+.ppie-resources-section.is-scrollable .ppie-resources-controls {
+  display: flex;
+}
+
 .ppie-resource-arrow {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid #d9ded6;
-  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #007a87;
+  border-radius: 6px;
   background: #fff;
-  color: #28372c;
-  font-size: 1.25rem;
+  color: #007a87;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
 
-.ppie-resource-arrow:hover {
-  background: #28372c;
+.ppie-resource-arrow:hover:not([aria-disabled="true"]) {
+  background: #007a87;
   color: #fff;
+}
+
+.ppie-resource-arrow[aria-disabled="true"] {
+  border-color: #b8c5c7;
+  color: #647174;
+  background: #f4f7f7;
+  cursor: default;
+}
+
+.ppie-resource-arrow:focus-visible,
+.ppie-resources-track:focus-visible,
+.ppie-resource-link:focus-visible {
+  outline: 3px solid #101729;
+  outline-offset: 3px;
+}
+
+.ppie-resource-link:focus-visible {
+  outline-color: #ffcc33;
 }
 
 .ppie-resources-track {
   display: grid;
-  grid-auto-columns: minmax(245px, 30%);
+  grid-auto-columns: min(100%, max(260px, calc((100% - 18px) / 2)));
   grid-auto-flow: column;
   gap: 18px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  padding: 4px 3px 18px;
+  padding: 4px 0 18px;
   scrollbar-width: thin;
-  scrollbar-color: #b9c2b4 #eef0eb;
+  scrollbar-color: #007a87 #edf4f4;
 }
 
 .ppie-resource-card {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  min-height: 340px;
+  min-height: 290px;
   overflow: hidden;
   border: 1px solid #e6e8e2;
   border-radius: 14px;
@@ -1268,7 +1295,7 @@ footer {
 
 
 
-.ppie-resource-card-body h3 {
+.ppie-resources-section .ppie-resource-card-body h3 {
   margin: 0 0 10px;
   color: #ffffff;
   font-size: 1.25rem;
@@ -1276,11 +1303,31 @@ footer {
   line-height: 1.3;
 }
 
-.ppie-resource-card-body > p:not(.resource-category) {
+.ppie-resources-section .ppie-resource-card-body > p {
   margin: 0 0 22px;
   color: #f0f7f7;
   font-size: 0.92rem;
   line-height: 1.6;
+}
+
+.ppie-resources-section .ppie-resource-card-body > .ppie-resource-pending {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.ppie-resources-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 20px;
+  margin-top: 8px;
+}
+
+.ppie-resources-section .ppie-resources-footer p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.85rem;
 }
 
 .ppie-resource-link {
@@ -1315,24 +1362,23 @@ footer {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .ppie-resources-track {
-    grid-auto-columns: minmax(240px, 70%);
+    grid-auto-columns: 100%;
+    gap: 14px;
   }
 }
 
-@media (max-width: 480px) {
-  .ppie-resources-heading {
-    align-items: center;
-  }
-
+@media (prefers-reduced-motion: reduce) {
   .ppie-resources-track {
-    grid-auto-columns: 85%;
-    gap: 14px;
+    scroll-behavior: auto;
   }
 
-  .ppie-resource-card {
-    min-height: 320px;
+  .ppie-resource-card,
+  .ppie-resource-link,
+  .ppie-resource-arrow {
+    transition: none;
+    transform: none;
   }
 }
 
@@ -1850,12 +1896,15 @@ body {
 
 .blog-leftcolumn {
 	flex: 3;
+	min-width: 0;
+	overflow-wrap: anywhere;
 }
 
 /* Right column */
 
 .blog-rightcolumn {
 	flex: 1;
+	min-width: 0;
 }
 
 /* Main article */
@@ -1883,19 +1932,6 @@ body {
 
 .blog-leftcolumn a {
 	color: #007a87;
-}
-
-/* Right-hand card */
-
-.blog-right-card {
-	background-color: #f5f5f5;
-	padding: 25px;
-	margin-top: 0;
-}
-
-.blog-right-card h3 {
-	margin-top: 0;
-	margin-bottom: 20px;
 }
 
 /* Other blog posts */
@@ -1998,9 +2034,6 @@ body {
 
 /* Webinars */
 .webinars-page {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 60px 8%;
 	color: #333;
 }
 
@@ -2163,10 +2196,6 @@ body {
 }
 
 @media (max-width: 650px) {
-	.webinars-page {
-		padding: 40px 5%;
-	}
-
 	.webinar-card summary,
 	.webinar-card-content {
 		padding-left: 18px;
@@ -2186,8 +2215,7 @@ body {
 
 .resources-section {
     max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
+	padding: 0;
 }
 
 /* ================================
@@ -2198,7 +2226,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 30px 0;
 }
 
 .dmt-button {
@@ -2258,23 +2285,12 @@ body {
 
 
 /* ================================
-   RESOURCES SECTION
-================================ */
-
-.resources-section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-
-/* ================================
    RESOURCE FILTER
 ================================ */
 
 .resource-filter {
     position: relative;
-    margin: 25px 0;
+    margin: 0 0 25px;
     max-width: 250px;
 }
 
@@ -2339,6 +2355,11 @@ body {
     grid-template-columns: 240px 1fr;
     gap: 25px;
     align-items: start;
+	padding-top: 25px;
+}
+
+.resource-list-column {
+    min-width: 0;
 }
 
 
@@ -2532,10 +2553,28 @@ body {
 
 @media (min-width: 701px) {
 
+    .resource-list-column {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .resource-list-column .resource-filter {
+        flex-shrink: 0;
+    }
+
     .resource-tabs {
-        max-height: 500px;
+        flex: 1;
+        min-height: 0;
+        /* Let the resource card determine the row height, not the list contents. */
+        contain: size;
         overflow-y: auto;
         padding-right: 5px;
+    }
+
+    .resource-tab {
+        flex-shrink: 0;
     }
 
 }
