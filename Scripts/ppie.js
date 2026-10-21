@@ -38,3 +38,20 @@ document.addEventListener("keydown", (event) => {
 		closeHotspots();
 	}
 });
+
+
+function playPPIEVideo() {
+    const container = document.getElementById("PPIE-video");
+
+    if (!container) return;
+
+    container.innerHTML = `
+        <iframe
+            src="https://youtu.be/ytqg13eNf-o?si=JspHjDHPEK-ekezi"
+            title="An introduction to PPIE"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+            style="width:100%; height:100%; border:0; position:absolute; inset:0;">
+        </iframe>
+    `;
+}
