@@ -1187,10 +1187,9 @@ footer {
 }
 
 .ppie-resources-section .ppie-resources-heading h2 {
-  margin: 0 0 8px;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 600;
-  color: #007a87;
+	color: #0297a7;
+	font-size: 2rem;
+	margin-bottom: 20px;
 }
 
 .ppie-resources-section .ppie-resources-intro {
@@ -1910,9 +1909,9 @@ body {
 /* Main article */
 
 .blog-leftcolumn h2 {
-	font-size: 36px;
-	line-height: 1.2;
-	margin-bottom: 30px;
+	color: #0297a7;
+	font-size: 2rem;
+	margin-bottom: 20px;
 }
 
 .blog-leftcolumn h3 {
