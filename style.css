@@ -587,6 +587,32 @@ footer {
 	}
 }
 
+.funding-acknowledgement {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.funding-acknowledgement p {
+    margin-bottom: 0;
+}
+
+.back-to-top {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    text-align: right;
+}
+
+.back-to-top a {
+    color: #0297a7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
 /* =================================
    SUBPAGE NAVBAR
    ================================= */
@@ -1009,33 +1035,33 @@ footer {
 }
 
 .hotspot-video-one {
-	left: 65%;
-	top: 33%;
+	left: 73%;
+	top: 23%;
 }
 
 .hotspot-video-two {
-	left: 67%;
-	top: 58%;
+	left: 92%;
+	top: 50%;
 }
 
 .hotspot-video-three {
-	left: 50%;
-	top: 71%;
+	left: 74%;
+	top: 82%;
 }
 
 .hotspot-video-four {
-	left: 35%;
-	top: 65%;
+	left: 37%;
+	top: 80%;
 }
 
 .hotspot-video-five {
-	left: 25%;
-	top: 49%;
+	left: 22%;
+	top: 50%;
 }
 
 .hotspot-video-six {
 	left: 39%;
-	top: 32%;
+	top: 24%;
 }
 
 .hotspot-marker {
