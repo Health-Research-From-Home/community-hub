@@ -73,22 +73,26 @@ body {
 
 /* Logos */
 .logo {
-	display: flex;
-	align-items: center;
-	gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo img {
-	height: auto;
-	object-fit: contain;
+    height: auto;
+    object-fit: contain;
 }
 
 .logo img:first-child {
-	width: 150px;
+    width: 150px;
+}
+
+.logo img:nth-child(2) {
+    width: 200px;
 }
 
 .logo img:last-child {
-	width: 200px;
+    width: 200px;
 }
 
 .menu-container {
@@ -645,17 +649,26 @@ footer {
 }
 
 .subpage-logo {
-	display: flex;
-	align-items: center;
-	gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.subpage-logo img {
+    height: auto;
+    object-fit: contain;
 }
 
 .subpage-logo img:first-child {
-	width: 150px;
+    width: 150px;
+}
+
+.subpage-logo img:nth-child(2) {
+    width: 200px;
 }
 
 .subpage-logo img:last-child {
-	width: 200px;
+    width: 200px;
 }
 
 /* =================================
