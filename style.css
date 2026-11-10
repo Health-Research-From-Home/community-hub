@@ -596,34 +596,34 @@ footer {
 }
 
 .funding-acknowledgement {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
 }
 
 .funding-acknowledgement p {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .funder-logo {
-    width: 120px;
-    height: auto;
-    flex-shrink: 0;
+	width: 120px;
+	height: auto;
+	flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
-    .funding-acknowledgement {
-        flex-direction: column;
-        gap: 10px;
-    }
+	.funding-acknowledgement {
+		flex-direction: column;
+		gap: 10px;
+	}
 
-    .funder-logo {
-        width: 100px;
-    }
+	.funder-logo {
+		width: 100px;
+	}
 }
 
 .back-to-top {
@@ -689,7 +689,7 @@ footer {
 }
 
 .subpage-logo img:last-child {
-	width: 200px;
+	width: 150px;
 }
 
 /* =================================
@@ -1637,7 +1637,7 @@ footer {
 }
 .about-card h2 {
 	margin-top: 0;
-	color: white;
+	color: white !important;
 }
 
 .about-card p {
@@ -2426,7 +2426,7 @@ body {
 	text-align: left;
 	font-size: 15px;
 	cursor: pointer;
-
+	font-family: "Montserrat", sans-serif !important;
 	transition: all 0.2s ease;
 }
 
