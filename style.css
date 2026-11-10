@@ -87,10 +87,6 @@ body {
 	width: 150px;
 }
 
-.logo img:nth-child(2) {
-	width: 200px;
-}
-
 .logo img:last-child {
 	width: 200px;
 }
@@ -600,13 +596,34 @@ footer {
 }
 
 .funding-acknowledgement {
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .funding-acknowledgement p {
-	margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+.funder-logo {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .funding-acknowledgement {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .funder-logo {
+        width: 100px;
+    }
 }
 
 .back-to-top {
@@ -669,10 +686,6 @@ footer {
 
 .subpage-logo img:first-child {
 	width: 150px;
-}
-
-.subpage-logo img:nth-child(2) {
-	width: 200px;
 }
 
 .subpage-logo img:last-child {
@@ -1798,7 +1811,6 @@ footer {
 }
 
 body {
-	padding: 20px;
 	background: #f1f1f1;
 }
 
@@ -2406,17 +2418,16 @@ body {
 }
 
 .resource-tab {
-    border: none;
-    background: white;
-    padding: 16px;
-    border-radius: 6px;
+	border: none;
+	background: white;
+	padding: 16px;
+	border-radius: 6px;
 
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    cursor: pointer;
+	text-align: left;
+	font-size: 15px;
+	cursor: pointer;
 
-    transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .resource-tab:hover {
