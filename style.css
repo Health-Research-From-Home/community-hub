@@ -514,6 +514,7 @@ footer {
 	padding: 40px;
 }
 
+/*footer*/
 .footer-columns {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -547,6 +548,33 @@ footer {
 	color: #0297a7;
 	text-decoration: none;
 }
+.footer-website-button {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.old-website-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.old-website-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.old-website-btn:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
 
 /* Social icons */
 
@@ -2637,4 +2665,79 @@ body {
 	.resource-title {
 		font-size: 23px;
 	}
+}
+
+/* INFORMATION GOVERNANCE RESOURCE LIST */
+
+.ig-resource-list {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 1 / -1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-family: "Montserrat", sans-serif;
+}
+
+.ig-resource-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.ig-resource-list p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.ig-resource-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ig-resource-list li {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ig-resource-list li:last-child {
+    border-bottom: none;
+}
+
+.ig-resource-list a {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.ig-resource-list a:hover {
+    color: #007b8a;
+    text-decoration: underline;
+}
+
+.ig-resource-list a:focus-visible {
+    outline: 2px solid #007b8a;
+    outline-offset: 4px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .ig-resource-list {
+        padding: 20px;
+    }
+
+    .ig-resource-list h3 {
+        font-size: 18px;
+    }
+
+    .ig-resource-list li {
+        padding: 12px 0;
+    }
 }
