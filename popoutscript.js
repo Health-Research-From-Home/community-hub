@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		{
 			title: "Consumer health measures from smartphones and wearables for population health research - working group paper",
-			description: "Working group paper",
+			description: "Working group publication",
 			tags: ["Data", "Technology", "Methods"],
 			image: "DMT resources/Images/Resource coming.png", // Shuai to update
 			file: "#", // Shuai to update
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 
 		{
-			title: "Opening the Black Box: Developing a Transparent Framework for Processing Consumer Smartphone/Wearable Data in Health Research - Journal publication",
-			description: "Journal publication written by Shuai Shao",
+			title: "An open framework for transparent and reproducible pre-processing of consumer smartphone/ wearable data in health research",
+			description: "Pending publication written by Shuai Shao",
 			tags: ["Data", "Methods"],
 			image: "DMT resources/Images/Resource coming.png", // Shuai to update
 			file: "#", // Shuai to update
