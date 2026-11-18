@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 
 		{
-			title: "Consumer health measures from smartphones and wearables for population health research - working group paper",
+			title: "Consumer health measures from smartphones and wearables for population health research - pending publication",
 			description: "Working group publication",
 			tags: ["Data", "Technology", "Methods"],
 			image: "DMT resources/Images/Resource coming.png", // Shuai to update
