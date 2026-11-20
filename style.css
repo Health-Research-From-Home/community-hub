@@ -1246,6 +1246,22 @@ footer {
 	}
 }
 
+.ppie-resources-list {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Position arrows above the cards */
+.ppie-resources-section .ppie-resources-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
 /* Resources carousel */
 .ppie-resources-section {
 	width: 100%;
