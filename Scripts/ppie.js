@@ -65,17 +65,16 @@ function playPPIEVideo() {
     `;
 }
 
-// Resources carousel: native horizontal scrolling also supports touch and Tab
-// navigation to the resource links. The buttons provide an additional way to browse.
-const resourcesTrack = document.getElementById("ppie-resources-track");
-
-// Skip setup if the resource section is absent. When present, it must contain
-// at least one card, both direction buttons, and #ppie-resources-status.
-if (resourcesTrack) {
-	const section = resourcesTrack.closest(".ppie-resources-section");
+// Initialise each resource carousel separately so its controls and status stay local.
+// Native horizontal scrolling also supports touch and Tab navigation to links.
+document.querySelectorAll(".ppie-resources-section").forEach((section) => {
+	const resourcesTrack = section.querySelector(".ppie-resources-track");
+	const status = section.querySelector('[role="status"]');
+	if (!resourcesTrack || !status) return;
 	const cards = [...resourcesTrack.querySelectorAll(".ppie-resource-card")];
+	if (!cards.length) return;
 	const buttons = [...section.querySelectorAll("[data-resource-direction]")];
-	const status = document.getElementById("ppie-resources-status");
+	const title = section.querySelector(".ppie-resources-category-title");
 	// Remember the destination during smooth scrolling so rapid button presses
 	// advance from the last request, rather than the animation's current position.
 	// null means navigation should use the track's actual scroll position.
@@ -124,7 +123,7 @@ if (resourcesTrack) {
 		});
 		if (visible.length) {
 			const range = visible.length === 1 ? visible[0] : `${visible[0]}–${visible.at(-1)}`;
-			const text = `Resources ${range} of ${cards.length}`;
+			const text = `${title?.textContent ?? "Resources"}: resources ${range} of ${cards.length}`;
 			// Avoid repeating an announcement when the visible range has not changed.
 			if (status.textContent !== text) status.textContent = text;
 		}
@@ -195,4 +194,4 @@ if (resourcesTrack) {
 	// Set the initial button states and resource count before any interaction.
 	updateControls();
 	updateStatus();
-}
+});
