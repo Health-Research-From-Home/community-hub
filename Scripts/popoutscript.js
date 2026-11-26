@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 
 		{
-			title: "RADAR-Base (PPT)",
+			title: "Remote monitoring with the RADAR-base platform (PPT)",
 			description: "Technology showcase talk given at Connect 2025",
 			tags: ["Technology"],
 			image: "DMT resources/Images/RADAR Base.png",
